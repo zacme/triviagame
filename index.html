@@ -9,27 +9,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1 class="text-center">Marvel Trivia</h1>
+            <h1 class="text-center">Disney Trivia</h1>
         </div>
 
-        <div class="row">
-            <div class= "col text-center">
-            <!--timer-->
-            <p id="timer">
-
-            </p>
-            </div>
-        </div>
 <!--display start button and it needs to hide when clicked and show up when game is over-->
         <div class="row" id="start-button">
             <div class="col text-center">
-                <button type="button">
+                <button type="button" class='btn btn-lg btn-primary' id= "start-button">
                     <h3>Start</h3>
                 </button>
             </div>
@@ -46,7 +38,7 @@
                        <h3 class="panel-title text-center"> Timer</h3>
                    </div>
                    <div class="panel-body text-center">
-                       <p id="timer"> </p>
+                       <h3 id="timer"> </h3>
                    </div>
                </div>
            </div>
@@ -61,8 +53,9 @@
                     <div class= "panel-heading">
                         <h3 class="panel-title text-center"> Questions</h3>
                     </div>
-                    <div class="panel-body text-center">
-                        <p id="questions"> </p>
+                    <div class="panel-body text-center" id="questions">
+                        <div id="qDiv"></div>
+                        <div id="aDiv"></div>
                     </div>
                 </div>
             </div>
@@ -77,12 +70,13 @@
                         <h3 class="panel-title text-center"> Scoreboard</h3>
                     </div>
                     <div class="panel-body text-center">
-                        <p id="score"> </p>
+                        <h4 id="score"> </h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>
